@@ -1,0 +1,46 @@
+<form [formGroup]="userForm">
+  {{ userForm.value | json }}
+  {{ userForm.status | json }}
+  <div>
+     <input formControlName="nome" placeholder="Nome">
+  </div>
+
+  <div>
+    <input formControlName="email" placeholder="Email">
+  </div>
+
+  <div>
+     <input formControlName="telefone" placeholder="Telefone">
+  </div>
+
+  <div>
+     <input formControlName="celular" placeholder="Celular">
+  </div>
+
+  <div>
+    <input formControlName="rg" placeholder="RG">
+  </div>
+
+  <div>
+    <input formControlName="cpf" placeholder="CPF">
+  </div>
+
+  <div>
+    <input formControlName="data_nascimento" placeholder="Data Nascimento">
+  </div>
+
+  <div>
+    <input formControlName="senha" placeholder="Senha">
+  </div>
+
+  <div>
+    <button (click)="novoUser(userForm.value)">Salvar</button>
+  </div>
+
+</form>
+
+<div>
+  <p *ngFor="let user of users">{{ user.nome +' Rg:'+ user.rg +' Cpf:'+user.cpf}}</p>
+</div>
+
+

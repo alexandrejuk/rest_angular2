@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "nome": "Alexandre dos Santos",
+      "email": "ale_santos.soares@hotmail.com",
+      "telefone": "43354841",
+      "celular": "982269470",
+      "rg": "538937993",
+      "cpf": "43947321821",
+      "data_nascimento": "25/05/1994",
+      "senha": "x1ba026404",
+      "criado": "2017-08-12T15:47:35.378Z",
+      "id": 1
+    }
+  ]
+}
