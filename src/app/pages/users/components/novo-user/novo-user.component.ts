@@ -16,7 +16,11 @@ export class NovoUserComponent implements OnInit {
   constructor(private _formBuilder: FormBuilder, private _userService: UserService) { }
 
   ngOnInit() {
-    this.userForm = this._formBuilder.group({
+    this.form();
+  }
+
+  form() {
+      this.userForm = this._formBuilder.group({
       nome: ['', [Validators.required]],
       email: ['', [Validators.required]],
       telefone: ['', [Validators.required]],
@@ -27,15 +31,17 @@ export class NovoUserComponent implements OnInit {
       senha: ['', [Validators.required]],
       criado: ['']
     });
-
-    this._userService.buscarTodos()
-                                  .subscribe((res) => this.users = res);
   }
 
   novoUser(user) {
     user.criado = this.data;
     this._userService.novo(user)
-                     .subscribe((res) => {console.log(res)});
+                     .subscribe((res) => {
+                        if (res.id !== undefined) {
+                        } else {
+                          alert('Não foi possivel Salvar')
+                        }
+                      });
   }
 
 }

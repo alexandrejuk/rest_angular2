@@ -2,7 +2,8 @@ import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { UsersComponent } from './users.component';
-import { NovoUserComponent } from './components/novo-user/novo-user.component';
+import { NovoUserComponent } from './components/novo-user';
+import { GerenciarComponent } from './components/gerenciar';
 
 const routes: Routes = [
   {
@@ -12,6 +13,10 @@ const routes: Routes = [
         {
           path: 'novo',
           component: NovoUserComponent
+        },
+        {
+          path: 'gerenciar',
+          component: GerenciarComponent
         }
     ]
   }

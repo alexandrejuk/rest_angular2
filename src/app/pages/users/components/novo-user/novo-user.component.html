@@ -1,6 +1,6 @@
-<form [formGroup]="userForm">
-  {{ userForm.value | json }}
-  {{ userForm.status | json }}
+<div>
+  testes
+  <form [formGroup]="userForm">
   <div>
      <input formControlName="nome" placeholder="Nome">
   </div>
@@ -38,9 +38,6 @@
   </div>
 
 </form>
-
-<div>
-  <p *ngFor="let user of users">{{ user.nome +' Rg:'+ user.rg +' Cpf:'+user.cpf}}</p>
 </div>
 
 

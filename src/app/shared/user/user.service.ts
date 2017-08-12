@@ -19,14 +19,15 @@ export class UserService {
     const options = new RequestOptions({ headers });
 
     return this._http.post(urlApi, body, options)
-              .map((res: Response) => res.json())
-              .catch((err: any) => Observable
-              .throw(err.json().err || 'Service Error'));
+                     .map((res: Response) => res.json())
+                     .catch((err: any) => Observable
+                     .throw(err.json().err || 'Service Error'));
   }
 
   buscarTodos() {
    return this._http.get(`${url}/users`)
-              .map((res: Response) => res.json())
-              .catch((err) => Observable.throw(err.json().err || 'Service error'));
+                    .map((res: Response) => res.json())
+                    .catch((err) => Observable
+                    .throw(err.json().err || 'Service error'));
   }
 }

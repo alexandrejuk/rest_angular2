@@ -4,8 +4,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { UserService } from './../../shared/user/user.service';
 import { UsersComponent } from './users.component';
-import { NovoUserComponent } from './components/novo-user/novo-user.component';
+import { NovoUserComponent } from './components/novo-user';
 import { routing } from './users.routing';
+import { GerenciarComponent } from './components/gerenciar';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { routing } from './users.routing';
   ],
   declarations: [
     UsersComponent,
-    NovoUserComponent
+    NovoUserComponent,
+    GerenciarComponent
   ],
   providers: [
     UserService
