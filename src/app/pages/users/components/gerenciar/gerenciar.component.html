@@ -1,6 +1,6 @@
-<table>
+<table id="t01">
 
-  <thead>
+
 
     <tr>
       <th>id</th>
@@ -12,28 +12,24 @@
       <th>Cpf</th>
       <th>Data Nascimento</th>
       <th>Senha</th>
-      <th>Criando em:</th>"
+      <th>Criado em:</th>
       <th></th>
     </tr>
 
-  </thead>
 
-  <tbody>
-
-    <tr>
-      <td>id</td>
-      <td>Nome</td>
-      <td>Email</td>
-      <td>Telefone</td>
-      <td>Celular</td>
-      <td>Rg</td>
-      <td>Cpf</td>
-      <td>Data Nascimento</td>
-      <td>Senha</td>
-      <td>Criando em:</td>"
+    <tr *ngFor="let user of users">
+      <td>{{ user?.id }}</td>
+      <td>{{ user?.nome }}</td>
+      <td>{{ user?.email }}</td>
+      <td>{{ user?.telefone }}</td>
+      <td>{{ user?.celular }}</td>
+      <td>{{ user?.rg }}</td>
+      <td>{{ user?.cpf }}</td>
+      <td>{{ user?.data_nascimento}}</td>
+      <td>{{ user?.senha }}</td>
+      <td>{{ user?.criado | date: 'dd/mm/yyyy'}}</td>
       <td></td>
     </tr>
 
-  </tbody>
 
 </table>

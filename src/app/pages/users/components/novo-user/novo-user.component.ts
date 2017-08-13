@@ -38,6 +38,8 @@ export class NovoUserComponent implements OnInit {
     this._userService.novo(user)
                      .subscribe((res) => {
                         if (res.id !== undefined) {
+                          alert(`Usuario ${res.nome} salvo com sucesso!`)
+                          this.userForm.reset();
                         } else {
                           alert('Não foi possivel Salvar')
                         }

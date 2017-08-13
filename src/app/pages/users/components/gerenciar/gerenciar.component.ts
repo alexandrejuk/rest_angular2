@@ -13,7 +13,13 @@ export class GerenciarComponent implements OnInit {
 
   ngOnInit() {
     this._userService.buscarTodos()
-                     .subscribe(res => this.users = res)
+                     .subscribe(res => {
+                       if (res === undefined) {
+                         alert('Não foi possivel trazer os dados')
+                       }else {
+                         return this.users = res;
+                       }
+                     })
 
   }
 

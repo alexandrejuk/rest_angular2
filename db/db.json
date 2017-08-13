@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "nome": "Alexandre dos Santos Soares",
+      "email": "ale_santos.soares@hotmail.com",
+      "telefone": "43354841",
+      "celular": "982269470",
+      "rg": "538937993",
+      "cpf": "43947321821",
+      "data_nascimento": "25/05/1994",
+      "senha": "tesste",
+      "criado": "2017-08-13T13:10:51.452Z",
+      "id": 1
+    },
+    {
+      "nome": "Caio vinicius ",
+      "email": "caiosanvi@hotmail.com",
+      "telefone": "44123844",
+      "celular": "2345898",
+      "rg": "847239847987",
+      "cpf": "79874398278947",
+      "data_nascimento": "13/09/1994",
+      "senha": "caiosanvi",
+      "criado": "2017-08-13T13:13:11.696Z",
+      "id": 2
+    }
+  ]
+}
