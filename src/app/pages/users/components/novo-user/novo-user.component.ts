@@ -15,7 +15,6 @@ export class NovoUserComponent implements OnInit {
   data = new Date();
   id: Number;
   user: USER
-  checkId: Boolean = true;
 
   constructor(private _formBuilder: FormBuilder,
               private _userService: UserService,
