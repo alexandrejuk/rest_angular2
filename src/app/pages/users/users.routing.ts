@@ -15,6 +15,10 @@ const routes: Routes = [
           component: NovoUserComponent
         },
         {
+          path: 'alterar/:id',
+          component: NovoUserComponent
+        },
+        {
           path: 'gerenciar',
           component: GerenciarComponent
         }
